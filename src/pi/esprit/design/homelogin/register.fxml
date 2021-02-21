@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="596.0" prefWidth="658.0" style="-fx-background-color: #A4A4A4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.esprit.design.homelogin.RegisterController">
+   <children>
+      <TextField fx:id="txt_name" layoutX="190.0" layoutY="68.0" promptText="enter your name" style="-fx-border-color: black;" />
+      <TextField fx:id="txt_prenom" layoutX="189.0" layoutY="119.0" promptText="enter your first name" style="-fx-border-color: black;" />
+      <PasswordField fx:id="txt_pwd" layoutX="189.0" layoutY="445.0" promptText="password" style="-fx-border-color: black;" />
+      <TextField fx:id="txt_login" layoutX="189.0" layoutY="317.0" promptText="login" style="-fx-border-color: black;" />
+      <TextField fx:id="txt_email" layoutX="189.0" layoutY="382.0" promptText="email" style="-fx-border-color: black;" />
+      <Button fx:id="btnregister" layoutX="246.0" layoutY="527.0" mnemonicParsing="false" onAction="#register" style="-fx-border-color: black;" text="register" />
+      <ComboBox fx:id="profil" layoutX="190.0" layoutY="177.0" prefWidth="150.0" promptText="profil" style="-fx-border-color: black;" />
+      <Button fx:id="cmd_attach" layoutX="410.0" layoutY="204.0" mnemonicParsing="false" onAction="#attach" prefHeight="27.0" prefWidth="100.0" style="-fx-border-color: black;" text="upload image" />
+      <TextField fx:id="txt_adress" layoutX="189.0" layoutY="246.0" promptText="adress" style="-fx-border-color: black;" />
+      <Pane layoutX="375.0" layoutY="25.0" prefHeight="158.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <TextField fx:id="txt_path" layoutX="399.0" layoutY="246.0" style="-fx-border-color: black;" />
+      <Button fx:id="btn_back" layoutY="-3.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="100.0" text="back to login" />
+   </children>
+</AnchorPane>

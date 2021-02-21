@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.esprit.design.homelogin.HelpController">
+   <children>
+      <ImageView fitHeight="636.0" fitWidth="883.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@danse.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="23.0" layoutY="51.0" prefHeight="74.0" prefWidth="705.0" text="For More Informations And Details about Last news">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnback" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <Text layoutX="120.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="https://edition.cnn.com/" wrappingWidth="239.13671875" />
+      <Button layoutX="22.0" layoutY="257.0" mnemonicParsing="false" onAction="#click" text="click here" />
+   </children>
+</AnchorPane>

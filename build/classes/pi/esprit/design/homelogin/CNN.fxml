@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.esprit.design.homelogin.CNNController">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="1106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/danse.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="click" layoutX="89.0" layoutY="229.0" mnemonicParsing="false" onAction="#RssFeed" text="click here" />
+      <Label layoutX="196.0" layoutY="233.0" prefHeight="17.0" prefWidth="188.0" text="http://rss.cnn.com/rss/edition.rss" />
+      <Text layoutX="147.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For More Informations  About New News In the World">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_back" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#back" text="back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="517.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.esprit.design.homelogin.LoginController">
+   <children>
+      <ImageView fitHeight="686.0" fitWidth="773.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-63.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@danse.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="468.0" text="Don't have an account" />
+      <TextField fx:id="txt_user" layoutX="59.0" layoutY="48.0" prefHeight="25.0" prefWidth="225.0" promptText="enter your  username" style="-fx-border-color: black;">
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pwd_user" layoutX="59.0" layoutY="130.0" prefHeight="25.0" prefWidth="225.0" promptText="enter your password" style="-fx-border-color: black;">
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnsign" layoutX="222.0" layoutY="464.0" mnemonicParsing="false" onAction="#sign" prefHeight="25.0" prefWidth="76.0" text="Sign in" />
+      <Button fx:id="btn_login" layoutX="96.0" layoutY="258.0" mnemonicParsing="false" onAction="#login" prefHeight="44.0" prefWidth="102.0" text="Login" />
+      <CheckBox fx:id="chshow" layoutX="111.0" layoutY="182.0" mnemonicParsing="false" onAction="#showpassword" text="Show password" />
+   </children>
+</AnchorPane>

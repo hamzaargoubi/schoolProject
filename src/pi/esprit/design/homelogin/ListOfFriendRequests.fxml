@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.esprit.design.homelogin.ListOfFriendRequestsController">
+    <children>
+      <TableView fx:id="tableview" layoutX="51.0" layoutY="97.0" prefHeight="287.0" prefWidth="371.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="134.0" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="132.0" text="Last Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="reportBtn" layoutX="462.0" layoutY="361.0" mnemonicParsing="false" onAction="#report" text="report" />
+      <Label fx:id="label" layoutX="171.0" layoutY="14.0" text="List of requests">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="51.0" layoutY="21.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <TextField fx:id="searchTf" layoutX="382.0" layoutY="21.0" promptText="search for user" />
+      <Button fx:id="acceptInvitationBtn" layoutX="463.0" layoutY="271.0" mnemonicParsing="false" onAction="#acceptInvite" text="accept invitation" />
+      <Button fx:id="viewProfileBtn" layoutX="462.0" layoutY="228.0" mnemonicParsing="false" onAction="#viewProfile" text="view profile" />
+      <Button fx:id="declineInviteBtn" layoutX="461.0" layoutY="317.0" mnemonicParsing="false" onAction="#declineInvite" text="decline invitation" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane id="AnchorPane" prefHeight="632.0" prefWidth="823.0" style="-fx-background-color: #CEF6F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.esprit.design.homelogin.VideoController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="350.0" fitWidth="600.0" layoutX="114.0" layoutY="63.0" />
+      <ImageView fx:id="btn_play" fitHeight="50.0" fitWidth="74.0" layoutX="288.0" layoutY="431.0" onMouseClicked="#playvideo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/play.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_pause" fitHeight="50.0" fitWidth="74.0" layoutX="371.0" layoutY="437.0" onMouseClicked="#pausevideo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/pause.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_stop" fitHeight="50.0" fitWidth="74.0" layoutX="469.0" layoutY="437.0" onMouseClicked="#stopvideo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/stop.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="volume" layoutX="619.0" layoutY="456.0" />
+      <Label layoutX="562.0" layoutY="454.0" text="volume" textFill="#d71414" />
+      <MenuBar layoutX="126.0" layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="open">
+            <items>
+              <MenuItem fx:id="btn_open" mnemonicParsing="false" onAction="#open" text="new video" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="upload">
+            <items>
+              <MenuItem fx:id="btn_uplo" mnemonicParsing="false" onAction="#uploa" text="upload/save" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="633.0" layoutY="18.0" text="next to" />
+      <Button fx:id="btn_list" layoutX="688.0" layoutY="14.0" mnemonicParsing="false" onAction="#list" text="Video List" />
+      <Button fx:id="btn_back" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <TextField fx:id="txt_nomvid" layoutX="85.0" layoutY="500.0" prefHeight="25.0" prefWidth="126.0" />
+      <Label layoutX="15.0" layoutY="504.0" text="Video name:" />
+      <TextField fx:id="txt_path" layoutX="631.0" layoutY="512.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="txtname" layoutX="85.0" layoutY="542.0" />
+      <Label layoutX="27.0" layoutY="546.0" text="set type" />
+      <Label layoutX="25.0" layoutY="581.0" text="Describe" />
+      <TextField fx:id="txt_desc" layoutX="85.0" layoutY="577.0" />
+      <TextField fx:id="txtpath" layoutX="238.0" layoutY="577.0" />
+      <Label layoutX="7.0" layoutY="463.0" text="Before downlowd:" />
+   </children>
+</AnchorPane>

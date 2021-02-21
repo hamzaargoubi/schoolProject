@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.esprit.design.homelogin.ListOfUsersController">
+   <children>
+      <TableView fx:id="tableview" layoutX="51.0" layoutY="97.0" prefHeight="287.0" prefWidth="267.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="134.0" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="132.0" text="Last Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="reportBtn" layoutX="462.0" layoutY="361.0" mnemonicParsing="false" onAction="#report" text="report" />
+      <Label fx:id="label" layoutX="171.0" layoutY="14.0" text="List of Users">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="51.0" layoutY="21.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <TextField fx:id="searchTf" layoutX="437.0" layoutY="21.0" promptText="search for user" />
+      <Button fx:id="sendFriendRequestBtn" layoutX="461.0" layoutY="325.0" mnemonicParsing="false" onAction="#sendFriendRequest" text="send Friend request" />
+      <Button fx:id="viewProfileBtn" layoutX="461.0" layoutY="289.0" mnemonicParsing="false" onAction="#viewProfile" text="view profile" />
+   </children>
+</AnchorPane>

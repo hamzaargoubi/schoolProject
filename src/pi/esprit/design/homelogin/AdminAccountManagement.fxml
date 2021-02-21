@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="670.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="pi.esprit.design.homelogin.AdminAccountManagementController">
+   <children>
+      <TableView fx:id="tableview" layoutX="36.0" layoutY="96.0" prefHeight="300.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="user id" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="profileColumn" prefWidth="75.0" text="profile" />
+            <TableColumn fx:id="loginColumn" prefWidth="75.0" text="Login" />
+            <TableColumn fx:id="passwordClolumn" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="adressColumn" prefWidth="75.0" text="Adress" />
+        </columns>
+      </TableView>
+      <Button fx:id="addUserBtn" layoutX="388.0" layoutY="423.0" mnemonicParsing="false" onAction="#addUser" text="add user" />
+      <Button fx:id="deleteUserBtn" layoutX="563.0" layoutY="422.0" mnemonicParsing="false" onAction="#deleteUser" text="delete user" />
+      <TextField fx:id="searchTf" layoutX="489.0" layoutY="23.0" promptText="search for users" />
+      <Button layoutX="36.0" layoutY="23.0" mnemonicParsing="false" text="Back" />
+      <Label fx:id="listUsersLb" layoutX="250.0" layoutY="27.0" text="List of users">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
